@@ -23,14 +23,20 @@ namespace Projection
             #endregion
 
             #region SelectMany
-            var result2 = Student.GetAllStudents().SelectMany(e => e.Subjects);
-            Console.WriteLine("Total subjects are");
-            foreach (var item in result2)
-            {
-                Console.WriteLine(item);
-            }
+            //var result2 = Student.GetAllStudents().SelectMany(e => e.Subjects);
+            //Console.WriteLine("Total subjects are");
+            //foreach (var item in result2)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            Console.WriteLine(result2.Aggregate((a,b)=>a+", "+b));
+            //Console.WriteLine(result2.Aggregate((a,b)=>a+", "+b));
+
+            var r2= Student.GetAllStudents().SelectMany(s => s.Subjects, (student, subjects) => new { studName = student.Firstname, subjs = subjects });
+            foreach (var item in r2)
+            {
+                Console.WriteLine(item.studName+"-"+item.subjs);
+            }
             #endregion
 
 

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilteringOperatorsDemo", "F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectionOperatorsDemo", "Projection\ProjectionOperatorsDemo.csproj", "{738013BB-7087-45D5-AFF4-D1062F979852}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingOperatorsDemo", "SortingOperatorsDemo\SortingOperatorsDemo.csproj", "{E954E1F9-4C65-4EE2-ACA0-C30B253F40D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{738013BB-7087-45D5-AFF4-D1062F979852}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{738013BB-7087-45D5-AFF4-D1062F979852}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{738013BB-7087-45D5-AFF4-D1062F979852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E954E1F9-4C65-4EE2-ACA0-C30B253F40D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E954E1F9-4C65-4EE2-ACA0-C30B253F40D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E954E1F9-4C65-4EE2-ACA0-C30B253F40D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E954E1F9-4C65-4EE2-ACA0-C30B253F40D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
