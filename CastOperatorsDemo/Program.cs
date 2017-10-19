@@ -1,36 +1,35 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 namespace CastOperatorsDemo
 {
-    class Employee
+    public class Employee
     {
         public int Id { get; set; }
         public string Firstname { get; set; }
         public string Department { get; set; }
+        public string Gender { get; set; }
         public Employee()
         {
 
         }
-        public Employee(int id,string fname,string dept)
+        public Employee(int id,string fname,string dept,string gend)
         {
             this.Id = id;
             this.Firstname = fname;
             this.Department = dept;
+            Gender = gend;
         }
 
         public static List<Employee> AllEmployees()
         {
             return  new List<Employee> {
-                new Employee(1,"Vishnu","IT"),
-                new Employee(2,"Saibaba","Finance"),
-                new Employee(3,"Naveen","Hardware"),
-                new Employee(4,"Venkat","IT"),
-                new Employee(5,"Raguveer","Finance"),
-                new Employee(6,"Shreedhar","Hardware"),
-                new Employee(7,"Maneesh","Finance"),
-                new Employee(8,"Mohan","Hardware"),
+                new Employee(1,"Vishnu","IT","Male"),
+                new Employee(2,"Saibaba","Finance","Female"),
+                new Employee(3,"Naveen","Hardware","Female"),
+                new Employee(4,"Venkat","IT","Female"),
+                new Employee(5,"Raguveer","Finance","Male"),
+                new Employee(6,"Shreedhar","Hardware","Male"),
+                new Employee(7,"Maneesh","Finance","Female"),
+                new Employee(8,"Mohan","Hardware","Male"),
             };
 
         }
@@ -69,25 +68,26 @@ namespace CastOperatorsDemo
 
 
 
-            ArrayList al = new ArrayList();
-            for (int i = 0; i < 5; i++)
-            {
-                al.Add(i);
-            }
-            al.Add("Vishnu");
+            //ArrayList al = new ArrayList();
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    al.Add(i);
+            //}
+            //al.Add("Vishnu");
             //arraylist works on object type
 
             //Cast: Converts all items in list to specified type.
             //If failed to cast, Invalid Cast Expcetion Thrown
             //al.Cast<int>();
 
-            //OfType: gets only specified type list
+            //OfType: gets only specified type list(filteringOperators)
 
-            foreach (var item in al.OfType<int>())
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in al.OfType<int>())
+            //{
+            //    Console.WriteLine(item);
+            //}
 
+            
         }
     }
 }
