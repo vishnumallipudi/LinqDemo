@@ -2,7 +2,7 @@
 
 namespace Projection
 {
-    class Student
+    public class Student
     {
         public int Id { get; set; }
         public string Firstname { get; set; }
@@ -18,8 +18,8 @@ namespace Projection
                 new Student() {Id=3,Firstname="Vasu",LastName="Mallipudi",Email="vasu@domain.com",Subjects=new List<string> { "ADO.NET"},Gender="Male" },
                 new Student() {Id=4,Firstname="Naveen",LastName="Tanakala",Email="naveen@domain.com",Subjects=new List<string> { "LINQ","C#"},Gender="Male" },
                 new Student() {Id=5,Firstname="Sai",LastName="Vinnakota",Email="sai@domain.com",Subjects=new List<string> { "SQL","Entity Framework"},Gender="Male" },
-                new Student() {Id=5,Firstname="Ram",LastName="Paluri",Email="vishnu@domain.com",Subjects=new List<string> { "HTML","CSS","Javascript"},Gender="Female" },
-                new Student() {Id=6,Firstname="Venkat",LastName="Shreedhar",Email="venkat@domain.com",Subjects=new List<string> { "Jquery"},Gender="Male" },
+                new Student() {Id=6,Firstname="Ram",LastName="Paluri",Email="vishnu@domain.com",Subjects=new List<string> { "HTML","CSS","Javascript"},Gender="Female" },
+                new Student() {Id=7,Firstname="Venkat",LastName="Shreedhar",Email="venkat@domain.com",Subjects=new List<string> { "Jquery"},Gender="Male" },
 
             };
             return emps;
